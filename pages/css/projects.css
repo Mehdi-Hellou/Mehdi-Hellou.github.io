@@ -97,7 +97,7 @@ section
 	background-size: cover;
 }
 
-section ul
+section
 {
 	list-style-type: none;
 	display: flex;
@@ -105,21 +105,21 @@ section ul
 	align-items: center;  
 }
 
-section li
+section .first_container
 {
-	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
+section .second_container
+{
+	position: relative;
+	margin: 15px; 
+}
 section a
 {
 	color: white;
 	text-decoration: none; 
-}
-
-section h2
-{
-	text-align: center; 
-	padding: 30px;  
 }
 
 /* Centered text */
@@ -148,7 +148,6 @@ section h2
 
 	/*border*/
 	border-radius: 50px; 
-	margin: auto;
 }
 
 .overlay_text > *
@@ -167,6 +166,7 @@ section h2
 	transform: translateY(0px);
 	transition: 0.25s;  
 }
+
 section h3
 {
 	font-size: 2em; 
@@ -180,12 +180,11 @@ section p
 
 section img
 {
-	height: auto;
+	height: 400px;
 	width: 600px;
-
 	/*border*/
+	border: thick ridge rgb(22, 219, 147);
 	border-radius: 50px; 
-	margin: auto;
 }
 
 footer
