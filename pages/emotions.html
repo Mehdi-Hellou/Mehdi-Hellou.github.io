@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title>Mehdi Hellou</title>
+    </head>
+
+    <body>
+        <div id ="bloc_page">
+
+            <header>
+                <div id="main_title">
+                    <h1>Mehdi Hellou</h1>
+                    <h2>Robotics/AI student</h2>    
+                </div>                
+
+                <nav>
+                    <ul>
+                        <li> <a href="main.html" >Home</a> </li>
+                        <li> <a href="projects.html" >Projects</a> </li>
+                        <li><a href="#" >Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <section>
+                <h2>Detection of human emotions</h2>
+
+                <div id="main_text">
+                    
+                    <p>This project adheres to a course I followed up during my exchange semester at Laval University (Québec), Computer Vision. A link to the description of the course (French link) <a href="https://www.ulaval.ca/les-etudes/cours/repertoire/detailsCours/gif-7001-vision-numerique.html"> here</a>.</p>
+                    ​<p>The project's purpose was to build a program to detect face and predict the emotion expressed by the person among a list of three: <strong>Happiness</strong>, <strong>Sadness</strong> and <strong>Surprise</strong>. The program uses the Face Landmark Detection in openCV and a SVM model train on LBPH (Local Binary Pattern Histogram) of a dataset of a face with different emotions.</p>
+                    <p>​The two methods and their predictions are made simultaneously, and in case of disagreement, the landmark predictions are privileged.
+                    ​In the video just below, you can see a demo. To distinct the emotions, a sun appears in the right corner for the happy emotion, water appear for sad emotion, and thunder appears for the surprise emotion.</p>
+
+                    <div class="video"> 
+                        <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/z30VILpnj1c">
+                        </iframe>  
+                    </div>
+                </div>
+
+            </section>
+
+            <footer>
+                <div id="logo" >
+                    <a href ='https://www.linkedin.com/in/mehdi-hellou-92b677129' target="_blank" id="linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href ='https://github.com/Mehdi-Hellou' target="_blank" id="github"><i class="fa fa-github"></i></a>
+                    <p> Email me: helloumehdi@outlook.fr </p>
+                </div>
+
+
+
+                <p class="copyright">Copyright Mehdi Hellou - All rights reserved></p>
+            </footer>
+
+        </div>
+    </body>
+</html>

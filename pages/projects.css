@@ -1,0 +1,277 @@
+body
+{
+	/*font family*/
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    background-image: url('../images/black.jpg');
+}
+
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+
+header
+{
+	color: white; 
+	height: 150px; 
+	margin-top: 30px;  
+	display: flex;
+	justify-content: space-between;
+	/*background-image: url('../images/black.jpg')   */
+}
+
+#main_title
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto; 
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+
+header h2
+{	
+
+	font-family: 'Dayrom', serif;
+    font-size: 1.1em;
+    font-weight: normal; 
+    margin: 0 0 0 15px;
+}
+
+header nav
+{
+	margin: auto;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;   
+}
+
+nav li
+{
+    margin-right: 15px;
+    margin-top: 15px; 
+}
+
+nav a
+{
+    font-size: 0.8em;
+    color: white;
+    padding-bottom: 3px;
+    text-decoration: none;
+
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+
+section
+{
+
+    padding: 12px;  
+	/* Center and scale the image nicely*/ 
+	background-image: url('../images/mountain.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;  
+}
+
+section li
+{
+	position: relative;
+}
+
+section a
+{
+	color: white;
+	text-decoration: none; 
+}
+
+section h2
+{
+	text-align: center; 
+	padding: 30px;  
+}
+
+/* Centered text */
+.overlay_text
+{ 
+	/*position in the centered*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%; 
+	height: 100%; 
+	background: rgba(0,0,0,0.6);
+
+	/**/
+	font-family: 'Dayrom', serif; 
+	/*text centered*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	opacity:0;
+	transition: 0.25s; 
+
+	/*border*/
+	border-radius: 50px; 
+	margin: auto;
+}
+
+.overlay_text > *
+{
+	transform: translateY(50px);
+	transition: 0.25s;
+}
+
+.overlay_text:hover
+{
+	opacity: 1; 
+}
+
+.overlay_text:hover > *
+{
+	transform: translateY(0px);
+	transition: 0.25s;  
+}
+section h3
+{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+section p
+{
+	font-size: 1.25em; 
+}
+
+section img
+{
+	height: auto;
+	width: 600px;
+
+	/*border*/
+	border-radius: 50px; 
+	margin: auto;
+}
+
+footer
+{
+	color: white;
+	display: flex; 
+	flex-direction: column;
+ 
+	height: 200px; 
+
+	/*background-image: url('../images/black.png');*/
+}
+
+
+footer ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+footer li 
+{
+	padding-right: 100px; 
+}
+
+#logo
+{
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+	padding-top: 50px;
+	padding-bottom: 50px; 
+
+	/* change the position to go to the left 
+	position: relative;
+   	left: 120px; */
+}
+
+footer a
+{
+	padding-right: 15px; 
+	font-size: 48px; 
+	text-decoration: none; 
+}
+
+#github
+{
+	color: white; 
+}
+
+#linkedin
+{
+	color: blue; 
+}
+
+.copyright
+{
+	padding-left: 10px; 
+	font-size: 0.8em;
+}
+
+/* Définition des polices personnalisées */
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('../polices/ballpark.eot');
+    src: url('../polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('../polices/ballpark.woff') format('woff'),
+         url('../polices/ballpark.ttf') format('truetype'),
+         url('../polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('../polices/dayrom.eot');
+    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../polices/dayrom.woff') format('woff'),
+         url('../polices/dayrom.ttf') format('truetype'),
+         url('../polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
