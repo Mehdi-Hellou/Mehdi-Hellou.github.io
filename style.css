@@ -1,0 +1,38 @@
+p
+{ 
+	font-size: 1em;
+	font-family: Arial,"Courier New"; 
+	text-align: justify;
+	color: blue; 
+}
+
+h1
+{
+	font-size: 3em; 
+	font-family: Arial, Georgia;
+	text-align: center; 
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.dessous
+{
+	clear: both; 
+}
+
+figure
+{
+	text-align: center;
+}
+/*.introduction
+{
+	color: red; 
+}
+
+.study
+{
+	color: black; 
+}*/
