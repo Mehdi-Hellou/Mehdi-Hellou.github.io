@@ -9,7 +9,7 @@ body
 
 section h1, footer h1, nav a
 {
-    font-family: Dayrom, serif;
+    font-family: 'Dayrom', serif;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -21,9 +21,10 @@ header
 	color: white; 
 	height: 150px; 
 	margin-top: 30px;  
+	border-radius: 10px;
 	display: flex;
 	justify-content: space-between;
-	/*background-image: url('../images/black.jpg')   */
+	/*background-image: url('../images/black.jpg')*/   
 }
 
 #main_title
@@ -84,8 +85,7 @@ nav a:hover
     border-bottom: 3px solid #760001;
 }
 
-
-
+/*  main section */
 section
 {
 
