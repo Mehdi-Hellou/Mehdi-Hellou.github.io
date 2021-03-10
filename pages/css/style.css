@@ -4,7 +4,7 @@ body
 	/*font family*/
 	font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
-    background-image: url('../images/black.jpg');
+    background-image: url('../../images/black.jpg');
 }
 
 
@@ -93,7 +93,7 @@ section
 
     padding: 12px;  
 	/* Center and scale the image nicely*/ 
-	background-image: url('../images/mountain.jpg');
+	background-image: url('../../images/mountain.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -104,7 +104,7 @@ section
 	align-items: center;
 }
 
-section h2
+section #main_title
 {
 	margin-top: 30px; 
 	text-align: center; 
@@ -134,6 +134,16 @@ section h2
 	color: white; 
 	border-bottom:3px solid white;
 
+}
+
+section #subtitle
+{
+
+	text-align: center;
+	font-weight: bold;	
+
+	/*border*/
+	border-bottom:3px solid white;
 }
 
 footer
@@ -212,11 +222,11 @@ footer img
 @font-face
 {
     font-family: 'BallparkWeiner';
-    src: url('../polices/ballpark.eot');
-    src: url('../polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('../polices/ballpark.woff') format('woff'),
-         url('../polices/ballpark.ttf') format('truetype'),
-         url('../polices/ballpark.svg#BallparkWeiner') format('svg');
+    src: url('../../polices/ballpark.eot');
+    src: url('../../polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('../../polices/ballpark.woff') format('woff'),
+         url('../../polices/ballpark.ttf') format('truetype'),
+         url('../../polices/ballpark.svg#BallparkWeiner') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -224,11 +234,11 @@ footer img
 @font-face
 {
     font-family: 'Dayrom';
-    src: url('../polices/dayrom.eot');
-    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('../polices/dayrom.woff') format('woff'),
-         url('../polices/dayrom.ttf') format('truetype'),
-         url('../polices/dayrom.svg#Dayrom') format('svg');
+    src: url('../../polices/dayrom.eot');
+    src: url('../../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../../polices/dayrom.woff') format('woff'),
+         url('../../polices/dayrom.ttf') format('truetype'),
+         url('../../polices/dayrom.svg#Dayrom') format('svg');
     font-weight: normal;
     font-style: normal;
 }
