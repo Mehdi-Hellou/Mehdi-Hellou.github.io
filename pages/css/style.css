@@ -132,7 +132,8 @@ section #main_title
 
 .video iframe
 {
-
+	width: 420px;
+	height: 315px;
 	box-shadow: 6px 6px 0px black;
 }
 /* main paragraph text and title  */
@@ -258,4 +259,67 @@ footer img
          url('../../polices/dayrom.svg#Dayrom') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+/**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+section {
+  counter-reset: footnotes;
+}
+
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+
+/**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: blue; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+/**
+ * Resetting the default focused styles on the number
+ */
+[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+  font-size: 0.8em;
+}
+
+section ol
+{
+	
+	position: relative;
+	right: 50px; 
+	color:  white; 
+}
+
+section ol li
+{
+	font-size: 0.7em; 
 }
