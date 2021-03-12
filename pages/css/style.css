@@ -117,25 +117,20 @@ section #main_title
 }
 
 /* video design*/
-
-.video
+.demo
 {
 	margin: 50px 0px 50px 0px;
-}
-
-#main_text .video
-{ 
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
-.video iframe
+video
 {
-	width: 420px;
-	height: 315px;
-	box-shadow: 6px 6px 0px black;
+	/* centered the video*/
+	width: 600px;
+	height: 415px; 
 }
+
 /* main paragraph text and title  */
 
 #main_text
