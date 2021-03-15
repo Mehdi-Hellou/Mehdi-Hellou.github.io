@@ -147,6 +147,30 @@ video
 	font-size: 1.2em;	
 }
 
+#main_text figure
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+
+/*Figure and images*/
+#main_text figure img
+{
+	width: 600px;
+	height: auto;
+
+	margin: 40px 0px 10px 0px; 
+}
+
+#main_text figcaption
+{
+	margin-bottom: 40px; 
+	color: white; 
+	text-align: center;
+}
+
 section #subtitle
 {
 
