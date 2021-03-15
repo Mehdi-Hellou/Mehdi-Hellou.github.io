@@ -150,6 +150,10 @@ section a
 	border-radius: 50px; 
 }
 
+.overlay_text p
+{
+	padding: 0px 3px 0px 3px;
+}
 .overlay_text > *
 {
 	transform: translateY(50px);
