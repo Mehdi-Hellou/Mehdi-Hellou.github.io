@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title>Mehdi Hellou</title>
+    </head>
+
+    <body>
+        <div id ="bloc_page">
+
+            <header>
+                <div id="main_title">
+                    <h1>Mehdi Hellou</h1>
+                    <h2>Robotics/AI student</h2>    
+                </div>                
+
+                <nav>
+                    <ul>
+                        <li> <a href="main.html" >Home</a> </li>
+                        <li> <a href="projects.html" >Projects</a> </li>
+                        <li><a href="contact.html" >Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <section>
+                <h2 id="main_title"></h2>
+
+                <div id="main_text">
+                    <p> During my master's at Sorbonne University(2019/2020), I realized an internship of 5 months at the laboratory Intelligent Robotics Lab (<a href="https://www.birmingham.ac.uk/research/activity/computer-science/artificial-intelligence/robotics-and-computer-vision/index.aspx" target="_blank">IRLab</a>) at the University of Birmingham under the supervision of <a href="https://www.cs.bham.ac.uk/~sridharm/?_ga=2.68132305.1592468214.1615912437-978356655.1615912437" target="_blank">Dr. Mohan Sridharan</a>. We focused on analyzing people's emotional states through facial expressions for reasoning and adjusting a social robot's behaviors during this internship. More specifically, we wanted to adapt the method on the assistance of elderly by enabling a mobile robot to detect emotions and assist seniors during their daily routine. For example, we took the scenario of a mobile robot that can deliver specific items to a user according to his preferences to increase his affective state. More precisely, if we have a user who loves to drink coffee and he is feeling sad, the robot should get a cup of coffee to cheer him up.
+                    </p>
+
+                    <p>
+                        In doing so, the project included two main modules to integrate into the final system: 
+                        <ul>
+                            <li>
+                                An emotion recognition module to detect and predict human emotions. For that, we used current state-of-the-art methods used for emotion recognition in Deep Learning with Convolutional Neural networks (CNN), such as ResNet-50 or VGG-16.
+                            </li>
+                            <li>
+                                A module to reason on emotions and user's preferences, e.g., bring a cup of coffee if the user likes to drink coffee. This part includes a knowledge base for the robot to learn the different elements from the world and its preferences. It also has a planner to analyze and develop the robot's actions to assist the users.
+                            </li>
+                        </ul>
+                    </p> 
+
+                    <p>Concerning the tools, Tensorflow 2.0 was used for the emotions recognition, and the declarative language Answer Set Prolog(ASP) was employed to represent the robot's knowledge. ASP was also mixed with the inference engines Clingo to plan the different robot's actions. To test our system in a real situation, we define a simulator environment and a scenario. We employed ROS(Robot Operating System) and Gazebo, which included six rooms with five objects, a human and a mobile robot. We provide a short demo below to have a better understanding of the simulator.
+                    </p> 
+
+                    <div class="demo"> 
+                        <video poster="../../images/UOB_ROS_project.jpg"
+                        src="../../video/UOB_ROS_project.mp4" controls></video> 
+                    </div>
+                </div>
+
+            </section>
+
+            <footer>
+                <div id="logo" >
+                    <a href ='https://www.linkedin.com/in/mehdi-hellou-92b677129' target="_blank" id="linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href ='https://github.com/Mehdi-Hellou' target="_blank" id="github"><i class="fa fa-github"></i></a>
+                    <p> Email me: helloumehdi@outlook.fr </p>
+                </div>
+
+                <p class="copyright">Copyright Mehdi Hellou - All rights reserved></p>
+            </footer>
+
+        </div>
+    </body>
+</html>
